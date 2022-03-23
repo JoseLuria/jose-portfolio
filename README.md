@@ -1,6 +1,8 @@
-# 🤖Mi personal portfolio
+# 🤖My personal portfolio
 
-Mi personal web page created with TypeScript React and Sass
+My personal web page created with TypeScript React and Sass
+
+[https://joseluria.com/](https://joseluria.com/)
 
 ![Screenshot](./public/preview.png)
 
