@@ -13,6 +13,10 @@
   @include sass.breakpoint(sass.$size-md) {
     padding: 5rem;
   }
+
+  @include sass.breakpoint(1375px) {
+    position: fixed;
+  }
 }
 
 .navButton {
