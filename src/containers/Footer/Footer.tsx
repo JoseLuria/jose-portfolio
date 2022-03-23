@@ -10,6 +10,7 @@ const Footer = () => {
     <footer className={styles.footerContainer}>
       <div className={styles.iconsCntainer}>
         <a
+          className={styles.linkIcon}
           href="https://www.linkedin.com/in/jose-antonio-luria-felipe-356094210/"
           target="_blank"
           title="Enlace a LinkdeIn"
@@ -17,6 +18,7 @@ const Footer = () => {
           <FontAwesomeIcon className={styles.icon} icon={faLinkedin} />
         </a>
         <a
+          className={styles.linkIcon}
           href="https://github.com/JoseLuria"
           target="_blank"
           title="Enlace a Github"

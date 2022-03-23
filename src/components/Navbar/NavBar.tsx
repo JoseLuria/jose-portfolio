@@ -17,6 +17,16 @@ const NavBar = () => {
   return (
     <>
       <nav className={styles.navBar}>
+        {!isOpen && (
+          <a
+            className={styles.skipButton}
+            href="#about"
+            title="Enlace al contenido principal"
+          >
+            Saltar al contenido
+          </a>
+        )}
+
         <button
           onClick={handleOpenMenu}
           className={styles.navButton}

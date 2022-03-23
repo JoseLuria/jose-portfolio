@@ -2,7 +2,7 @@
 
 .footerContainer {
   width: 100%;
-  padding: 35px 1.5rem;
+  padding: 25px 1.5rem;
   background-color: sass.$black;
   border-top: 1px solid sass.$dark-gray;
   display: flex;
@@ -13,9 +13,15 @@
 
   @include sass.breakpoint(sass.$size-lg) {
     position: relative;
-    padding: 50px 3rem;
+    padding: 35px 3rem;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .linkIcon {
+    &:focus-visible {
+      opacity: 70%;
+    }
   }
 
   .icon {
