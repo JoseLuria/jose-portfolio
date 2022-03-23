@@ -1,0 +1,47 @@
+{
+  "technologies": [
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "React",
+    "Sass",
+    "Tailwind"
+  ],
+  "links": [
+    { "name": "Inicio", "direction": "#header" },
+    { "name": "Sobre Mi", "direction": "#about" },
+    { "name": "Proyectos", "direction": "#projects" },
+    { "name": "Contacto", "direction": "#contact" }
+  ],
+  "projects": [
+    {
+      "title": "Aplicación de Tareas",
+      "description": "Una aplicación de tareas creada con React y Tailwind implementando un modo obscuro, local storage y la funcionalidad de drag and drop, así como también hago uso de Redux para manejar las tareas.",
+      "image": "./screenshot-todo-list.png",
+      "technologies": [
+        "JavaScript (ES6+)",
+        "React",
+        "Redux",
+        "Tailwind",
+        "React Beautiful Dnd"
+      ],
+      "liveLink": "https://vibrant-chandrasekhar-6b2309.netlify.app/",
+      "githubLink": "https://github.com/JoseLuria/todo-app"
+    },
+    {
+      "title": "Aplicación del Clima",
+      "description": "Una aplicación del clima creada con React y Tailwind la cual utiliza geolocalización para obtener la ubicacion del usuario y poer medio de una API mostar el clima Actual.",
+      "image": "./screenshot-weather-app.png",
+      "technologies": ["JavaScript (ES6+)", "React", "Tailwind", "API"],
+      "liveLink": "https://naughty-volhard-56ad87.netlify.app/",
+      "githubLink": "https://github.com/JoseLuria/react-weather"
+    },
+    {
+      "title": "Landing Page",
+      "description": "Una landing page sencilla creada con React y SASS la cual por medio de una peticiona la API permite la funcionalidad de acortar URLs",
+      "image": "./screenshot-landing.png",
+      "technologies": ["JavaScript (ES6+)", "React", "SASS", "API"],
+      "liveLink": "https://keen-booth-4287bf.netlify.app/",
+      "githubLink": "https://github.com/JoseLuria/url-shortening-landing-page"
+    }
+  ]
+}

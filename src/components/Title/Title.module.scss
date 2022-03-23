@@ -1,0 +1,23 @@
+@use "../../sass";
+
+.title {
+  color: sass.$white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 2.188rem;
+
+  @include sass.breakpoint(sass.$size-md) {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+}
+
+.titleMedium {
+  font-size: 1.5rem;
+  line-height: 1.625rem;
+
+  @include sass.breakpoint(sass.$size-md) {
+    font-size: 2rem;
+    line-height: 2.188rem;
+  }
+}

@@ -1,0 +1,22 @@
+@use "../../sass";
+
+.technologyItem {
+  height: 2.625rem;
+  background-color: sass.$dark-gray;
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: sass.$white;
+  font-weight: 500;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+
+  @include sass.breakpoint(sass.$size-md) {
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+.technologyItemDark {
+  background-color: sass.$black;
+}

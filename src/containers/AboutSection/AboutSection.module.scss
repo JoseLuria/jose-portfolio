@@ -1,0 +1,39 @@
+@use "../../sass";
+
+.aboutSection {
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+
+  @include sass.breakpoint(sass.$size-md) {
+    padding: 6rem 0;
+  }
+
+  @include sass.breakpoint(sass.$size-lg) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  span {
+    display: flex;
+  }
+
+  .aboutInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .technologiesContainer {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  }
+}

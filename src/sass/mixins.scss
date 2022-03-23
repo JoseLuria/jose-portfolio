@@ -1,0 +1,15 @@
+// Media query mixin
+
+@mixin breakpoint($size) {
+  @media (min-width: ($size)) {
+    @content;
+  }
+}
+
+@mixin hover() {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+}

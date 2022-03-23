@@ -1,0 +1,53 @@
+@use "../../sass";
+
+.button {
+  min-width: 140px;
+  height: 3rem;
+  border: 1.5px solid sass.$white;
+  color: sass.$white;
+  padding: 0 1.5em;
+  cursor: pointer;
+  font-weight: 500;
+  transition: sass.$duration;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:focus-visible {
+    background-color: sass.$white;
+    color: sass.$black;
+  }
+
+  @include sass.hover {
+    background-color: sass.$white;
+    color: sass.$black;
+  }
+
+  @include sass.breakpoint(sass.$size-md) {
+    min-width: 180px;
+    font-size: 1.25rem;
+  }
+}
+
+.linkButton {
+  color: sass.$neon-cyan;
+  cursor: pointer;
+  font-weight: 500;
+  transition: sass.$duration;
+  font-size: 1rem;
+  text-decoration: none;
+
+  &:focus-visible {
+    text-decoration: underline;
+  }
+
+  @include sass.hover {
+    text-decoration: underline;
+  }
+
+  @include sass.breakpoint(sass.$size-md) {
+    font-size: 1.25rem;
+  }
+}

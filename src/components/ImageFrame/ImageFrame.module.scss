@@ -1,0 +1,45 @@
+@use "../../sass";
+
+.frameContainer {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.frame {
+  width: 200px;
+  height: 200px;
+  background: rgb(74, 206, 209);
+  background: linear-gradient(
+    180deg,
+    rgba(74, 206, 209, 1) 0%,
+    rgba(60, 57, 188, 1) 100%
+  );
+
+  @include sass.breakpoint(360px) {
+    width: 250px;
+    height: 250px;
+  }
+
+  @include sass.breakpoint(sass.$size-md) {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.frameImage {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @include sass.breakpoint(360px) {
+    width: 250px;
+    height: 250px;
+  }
+
+  @include sass.breakpoint(sass.$size-md) {
+    width: 300px;
+    height: 300px;
+  }
+}

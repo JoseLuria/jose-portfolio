@@ -1,0 +1,58 @@
+@use "../../sass";
+
+.navBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding: 3rem 2rem;
+
+  @include sass.breakpoint(sass.$size-md) {
+    padding: 5rem;
+  }
+}
+
+.navButton {
+  margin-left: auto;
+  height: 0.875rem;
+  width: 2.375rem;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+}
+
+.navButtonLine {
+  border: none;
+  height: 3px;
+  width: 100%;
+  background-color: sass.$white;
+}
+
+.menuListContainer {
+  width: 100%;
+  max-width: 1110px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: sass.$white;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @include sass.breakpoint(sass.$size-md) {
+    font-size: 4rem;
+  }
+}
+
+.menuListItem {
+  text-decoration: none;
+  color: inherit;
+}
