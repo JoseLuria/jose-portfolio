@@ -2,10 +2,9 @@
 
 .layoutContainer {
   width: 100%;
-  height: 100vh;
   background-image: url("../assets/grid-pattern-mobile.svg");
-  background-size: cover;
-  overflow-y: auto;
+  background-size: contain;
+  background-repeat: repeat;
   overflow-x: hidden;
   position: relative;
   display: flex;

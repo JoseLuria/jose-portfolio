@@ -11,7 +11,7 @@
   text-align: center;
   gap: 1rem;
 
-  @include sass.breakpoint(sass.$size-md) {
+  @include sass.breakpoint(sass.$size-lg) {
     position: relative;
     padding: 50px 3rem;
     flex-direction: row;
@@ -31,14 +31,14 @@
     display: flex;
     gap: 1.5rem;
 
-    @include sass.breakpoint(sass.$size-md) {
+    @include sass.breakpoint(sass.$size-lg) {
       position: absolute;
       left: 3rem;
     }
   }
 
   .backToTop {
-    @include sass.breakpoint(sass.$size-md) {
+    @include sass.breakpoint(sass.$size-lg) {
       position: absolute;
       right: 3rem;
     }
