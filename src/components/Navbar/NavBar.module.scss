@@ -20,6 +20,8 @@
 }
 
 .skipButton {
+  top: 4rem;
+  position: fixed;
   padding: 0 1.5em;
   transition-duration: sass.$duration;
   color: sass.$black;
