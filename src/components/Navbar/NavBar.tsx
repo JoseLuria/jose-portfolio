@@ -10,8 +10,8 @@ const NavBar = () => {
   const { links } = MenuData;
 
   const handleOpenMenu = () => {
-    setIsOpen(!isOpen);
     document.body.classList.toggle("no-scroll");
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -35,6 +35,7 @@ const NavBar = () => {
           <motion.hr
             animate={{ rotateZ: isOpen ? "45deg" : "0deg" }}
             className={styles.navButtonLine}
+            transition={{ when: "" }}
           />
           <motion.hr
             animate={{
@@ -49,8 +50,13 @@ const NavBar = () => {
         {isOpen && (
           <MenuContainer>
             <ul className={styles.menuListContainer}>
-              {links.map(({ name, direction }, index) => (
-                <li key={index}>
+              {links.map(({ name, direction, id }) => (
+                <motion.li
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.3 * id }}
+                  key={id}
+                >
                   <a
                     onClick={handleOpenMenu}
                     className={styles.menuListItem}
@@ -59,7 +65,7 @@ const NavBar = () => {
                   >
                     {name}
                   </a>
-                </li>
+                </motion.li>
               ))}
             </ul>
           </MenuContainer>

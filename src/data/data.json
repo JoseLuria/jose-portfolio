@@ -7,10 +7,10 @@
     "Tailwind"
   ],
   "links": [
-    { "name": "Inicio", "direction": "#header" },
-    { "name": "Sobre Mi", "direction": "#about" },
-    { "name": "Proyectos", "direction": "#projects" },
-    { "name": "Contacto", "direction": "#contact" }
+    { "id": 1, "name": "Inicio", "direction": "#header" },
+    { "id": 2, "name": "Sobre Mi", "direction": "#about" },
+    { "id": 3, "name": "Proyectos", "direction": "#projects" },
+    { "id": 4, "name": "Contacto", "direction": "#contact" }
   ],
   "projects": [
     {
