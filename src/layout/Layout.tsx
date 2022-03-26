@@ -33,7 +33,7 @@ const Layout = ({ children }: ChildrenProps) => {
         <img
           className={styles.layoutDesktopImage}
           src={DesktopHero}
-          width={1220}
+          width={1228}
           height={1278}
           alt="Hero"
         />
