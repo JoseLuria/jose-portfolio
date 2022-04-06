@@ -1,8 +1,12 @@
+import { ReactChild } from "react"
 import styles from "./MenuContainer.module.scss";
 import { motion } from "framer-motion";
-import { menuListProps } from "../../interfaces/interfaces";
 
-const MenuContainer = ({ children }: menuListProps) => {
+interface Props {
+  children: ReactChild | ReactChild[];
+}
+
+const MenuContainer = ({ children }: Props) => {
   const menuContainerVariants = {
     initial: { opacity: 0 },
     animate: {

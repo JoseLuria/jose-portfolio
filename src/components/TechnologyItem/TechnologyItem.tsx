@@ -1,7 +1,11 @@
-import { TechnologyProps } from "../../interfaces/interfaces";
 import styles from "./TechnologyItem.module.scss";
 
-const TechnologyItem = ({ children, dark }: TechnologyProps) => {
+interface Props {
+  dark?: boolean;
+  children: string;
+}
+
+const TechnologyItem = ({ children, dark }: Props) => {
   return (
     <div
       className={`${styles.technologyItem} ${

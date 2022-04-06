@@ -1,12 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, ReactElement } from "react";
 import styles from "./Layout.module.scss";
 import DesktopHero from "../assets/hero-image-desktop.png";
 import MobileHero from "../assets/hero-image-mobile.png";
-import { ChildrenProps } from "../interfaces/interfaces";
 import Footer from "../containers/Footer/Footer";
 import NavBar from "../components/Navbar/NavBar";
 
-const Layout = ({ children }: ChildrenProps) => {
+export interface Props {
+  children?: ReactElement | ReactElement[];
+}
+
+const Layout = ({ children }: Props) => {
   const [screenSize, setScreenSize] = useState<string>("no-size");
 
   useEffect(() => {

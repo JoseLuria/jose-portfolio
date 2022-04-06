@@ -1,7 +1,10 @@
 import styles from "./ImageFrame.module.scss";
-import { FrameProps } from "../../interfaces/interfaces";
 
-const ImageFrame = ({ src }: FrameProps) => {
+interface Props {
+  src: string;
+}
+
+const ImageFrame = ({ src }: Props) => {
   return (
     <div className={styles.frameContainer}>
       <img

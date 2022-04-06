@@ -1,7 +1,13 @@
-import { TitleProps } from "../../interfaces/interfaces";
+import { ReactChild } from "react";
 import styles from "./Title.module.scss";
 
-const Title = ({ size, children, medium }: TitleProps) => {
+interface Props {
+  children: ReactChild | ReactChild[];
+  size?: string;
+  medium?: boolean;
+}
+
+const Title = ({ size, children, medium }: Props) => {
   const finalStyles = `${styles.title} ${medium && styles.titleMedium}`;
 
   switch (size) {

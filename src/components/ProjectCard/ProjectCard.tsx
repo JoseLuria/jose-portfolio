@@ -1,9 +1,18 @@
+import { ReactChild } from "react"
 import styles from "./ProjectCard.module.scss";
-import { ProductProps } from "../../interfaces/interfaces";
 import Title from "../Title/Title";
 import Paragraph from "../Paragraph/Paragraph";
 import TechnologyItem from "../TechnologyItem/TechnologyItem";
 import LinkButton from "../LinkButton/LinkButton";
+
+interface Props {
+  title: string;
+  children: ReactChild | ReactChild[];
+  image: string;
+  technologies: string[];
+  liveLink: string;
+  githubLink: string;
+}
 
 const ProjectCard = ({
   title,
@@ -12,7 +21,7 @@ const ProjectCard = ({
   technologies,
   liveLink,
   githubLink,
-}: ProductProps) => {
+}: Props) => {
   return (
     <div className={styles.projectCardContainer}>
       <div className={styles.projectCardImageWrapper}>

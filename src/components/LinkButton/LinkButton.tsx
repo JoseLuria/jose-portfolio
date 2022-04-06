@@ -1,7 +1,14 @@
-import { ButtonProps } from "../../interfaces/interfaces";
 import styles from "./LinkButton.module.scss";
+import { ReactChild } from "react"
 
-const LinkButton = ({ children, href, newTab, text }: ButtonProps) => {
+interface Props {
+  children: ReactChild | ReactChild[];
+  href?: string;
+  newTab?: boolean;
+  text?: boolean;
+}
+
+const LinkButton = ({ children, href, newTab, text }: Props) => {
   return (
     <a
       href={href ? href : "#"}
