@@ -16,10 +16,17 @@
     },
     {
       "title": "Todo App",
-      "description": "Una aplicación de tareas con funcionalidad de drag and drop, creada con React, Tailwind y Redux",
+      "description": "Una aplicación de tareas con funcionalidad de drag and drop y modo oscuro, creada con React, Tailwind y Redux",
       "image": "./todo-preview.jpg",
       "liveLink": "https://vibrant-chandrasekhar-6b2309.netlify.app/",
       "githubLink": "https://github.com/JoseLuria/todo-app"
+    },
+    {
+      "title": "Music App",
+      "description": "Una aplicación que permite buscar información sobre diversas bandas y artistas musicales y agregarlos a favoritos usando la API de AudioDB",
+      "image": "./react-music-preview.jpg",
+      "liveLink": "https://sensational-sprinkles-de98e3.netlify.app/",
+      "githubLink": "https://github.com/JoseLuria/react-music"
     }
   ]
 }
