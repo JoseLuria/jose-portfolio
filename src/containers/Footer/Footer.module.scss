@@ -19,8 +19,10 @@
   }
 
   .linkIcon {
-    &:focus-visible {
-      opacity: 70%;
+    &:focus-visible,
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(86%) sepia(84%)
+        saturate(5483%) hue-rotate(141deg) brightness(88%) contrast(84%);
     }
   }
 
