@@ -1,20 +1,11 @@
 import styles from "./TechnologyItem.module.scss";
 
 interface Props {
-  dark?: boolean;
   children: string;
 }
 
-const TechnologyItem = ({ children, dark }: Props) => {
-  return (
-    <div
-      className={`${styles.technologyItem} ${
-        dark && styles.technologyItemDark
-      }`}
-    >
-      {children}
-    </div>
-  );
+const TechnologyItem = ({ children }: Props) => {
+  return <div className={styles.technologyItem}>{children}</div>;
 };
 
 export default TechnologyItem;

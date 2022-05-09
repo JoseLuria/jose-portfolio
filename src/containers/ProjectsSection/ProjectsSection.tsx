@@ -12,15 +12,11 @@ const ProjectsSection = () => {
       <Title size="h2">02. Mis Proyectos</Title>
       <Paragraph>Estos son algunos de los proyectos que he realizado</Paragraph>
       {projects.map(
-        (
-          { title, description, image, technologies, liveLink, githubLink },
-          index
-        ) => (
+        ({ title, description, image, liveLink, githubLink }, index) => (
           <ProjectCard
             key={index}
             title={title}
             image={image}
-            technologies={technologies}
             liveLink={liveLink}
             githubLink={githubLink}
           >

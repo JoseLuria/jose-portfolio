@@ -38,6 +38,9 @@
   transition: sass.$duration;
   font-size: 1rem;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
   &:focus-visible {
     text-decoration: underline;

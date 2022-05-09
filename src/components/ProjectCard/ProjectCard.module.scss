@@ -5,48 +5,41 @@
   max-width: 550px;
   background-color: sass.$dark-gray;
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 20px;
 
   @include sass.breakpoint(sass.$size-lg) {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 3rem;
     padding: 3rem;
     max-width: 1000px;
   }
 
   .projectCardImageWrapper {
     width: 100%;
-    height: 250px;
-    overflow: hidden;
     display: flex;
     justify-content: center;
 
     @include sass.breakpoint(sass.$size-lg) {
       flex: 1;
-      height: 420px;
     }
+
     .projectCardImage {
-      height: 100%;
+      width: 100%;
+      border-radius: 8px;
     }
   }
 
   .projectCardDataContainer {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-top: 1.5rem;
     text-align: left;
 
     @include sass.breakpoint(sass.$size-lg) {
       flex: 1;
       margin-top: 0;
-    }
-
-    .projectCardTechnologies {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
     }
 
     .projectCardButtons {

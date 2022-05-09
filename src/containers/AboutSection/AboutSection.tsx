@@ -1,12 +1,12 @@
 import Title from "../../components/Title/Title";
 import Paragraph from "../../components/Paragraph/Paragraph";
-import LinkButton from "../../components/LinkButton/LinkButton";
 import ImageFrame from "../../components/ImageFrame/ImageFrame";
 import styles from "./AboutSection.module.scss";
 import ProfilePic from "../../assets/profile-jose.webp";
 import TechnologyItem from "../../components/TechnologyItem/TechnologyItem";
-import Resume from "../../assets/resume-jose.pdf";
 import PageData from "../../data/data.json";
+// import LinkButton from "../../components/LinkButton/LinkButton";
+// import Resume from "../../assets/resume-jose.pdf";
 
 const AboutSection = () => {
   const { technologies } = PageData;
@@ -20,8 +20,8 @@ const AboutSection = () => {
           web, me encanta pasar el tiempo programando, escuchando música y
           jugando a videojuegos. Actualmente, estudio Desarrollo Web en Academlo
           y complemento mi educación con cursos de Platzi.
-          <br />
-          <br />
+        </Paragraph>
+        <Paragraph>
           Algunas de las tecnologías con las que he trabajado son:
         </Paragraph>
         <div className={styles.technologiesContainer}>
@@ -30,9 +30,9 @@ const AboutSection = () => {
           ))}
         </div>
         <span>
-          <LinkButton href={Resume} newTab>
+          {/* <LinkButton href={Resume} newTab>
             Mi Curriculum
-          </LinkButton>
+          </LinkButton> */}
         </span>
       </div>
       <ImageFrame src={ProfilePic} />
