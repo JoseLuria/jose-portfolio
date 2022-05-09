@@ -27,6 +27,13 @@
       "image": "./react-music-preview.jpg",
       "liveLink": "https://sensational-sprinkles-de98e3.netlify.app/",
       "githubLink": "https://github.com/JoseLuria/react-music"
+    },
+    {
+      "title": "Weather App",
+      "description": "Una aplicación del clima que usa la API de Open Weather para mostrar la información usado React y Tailwind",
+      "image": "./weather-preview.jpg",
+      "liveLink": "https://naughty-volhard-56ad87.netlify.app/",
+      "githubLink": "https://github.com/JoseLuria/react-weather"
     }
   ]
 }
