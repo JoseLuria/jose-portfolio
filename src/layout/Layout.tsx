@@ -10,34 +10,36 @@ export interface Props {
 }
 
 const Layout = ({ children }: Props) => {
-  const [screenSize, setScreenSize] = useState<string>("no-size");
+  const [screenSize, setScreenSize] = useState<number>(window.innerWidth);
 
   useEffect(() => {
-    if (window.innerWidth >= 768) {
-      setScreenSize("no-mobile");
-    } else {
-      setScreenSize("mobile");
-    }
+    window.addEventListener("resize", () => {
+      setScreenSize(window.innerWidth);
+    });
+    return () => {
+      window.removeEventListener("resize", () => {
+        setScreenSize(window.innerWidth);
+      });
+    };
   }, []);
 
   return (
     <div className={styles.layoutContainer}>
       <NavBar />
-      {screenSize === "mobile" && (
-        <img
-          className={styles.layoutMobileImage}
-          width={678}
-          height={706}
-          src={MobileHero}
-          alt="Hero"
-        />
-      )}
-      {screenSize === "no-mobile" && (
+      {screenSize >= 768 ? (
         <img
           className={styles.layoutDesktopImage}
           src={DesktopHero}
           width={1228}
           height={1278}
+          alt="Hero"
+        />
+      ) : (
+        <img
+          className={styles.layoutMobileImage}
+          width={678}
+          height={706}
+          src={MobileHero}
           alt="Hero"
         />
       )}

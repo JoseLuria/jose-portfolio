@@ -1,5 +1,5 @@
 {
-  "technologies": ["JavaScript (ES6+)", "React", "SASS", "TypeScript"],
+  "technologies": ["JavaScript (ES6+)", "TypeScript", "React", "SASS", "Tailwind", "Node JS", "Express"],
   "links": [
     { "id": 1, "name": "Inicio", "direction": "#header" },
     { "id": 2, "name": "Sobre Mi", "direction": "#about" },
