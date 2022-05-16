@@ -31,6 +31,7 @@ const NavBar = () => {
           onClick={handleOpenMenu}
           className={styles.navButton}
           aria-label="Botón de menú"
+          title="Botón de menú"
         >
           <motion.hr
             animate={{ rotateZ: isOpen ? "45deg" : "0deg" }}
@@ -61,7 +62,7 @@ const NavBar = () => {
                     onClick={handleOpenMenu}
                     className={styles.menuListItem}
                     href={direction}
-                    title={`Ir a ${name}`}
+                    title={`Ir a ${name.toLocaleLowerCase()}`}
                   >
                     {name}
                   </a>

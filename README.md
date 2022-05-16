@@ -1,4 +1,4 @@
-# 🤖My personal portfolio
+# 🤖 My personal portfolio
 
 My personal web page created with TypeScript React and Sass
 
@@ -6,13 +6,13 @@ My personal web page created with TypeScript React and Sass
 
 ![Screenshot](./public/preview.png)
 
-## Built with
+## 📄 Built with
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [Sass](https://sass-lang.com/)
 
-## License
+## ⚙️ License
 
 [MIT](https://opensource.org/licenses/MIT)

@@ -13,7 +13,7 @@ const Footer = () => {
           className={styles.linkIcon}
           href="https://www.linkedin.com/in/jose-antonio-luria-felipe-356094210/"
           target="_blank"
-          title="Enlace a LinkdeIn"
+          title="Enlace a linkedin"
         >
           <FontAwesomeIcon className={styles.icon} icon={faLinkedin} />
         </a>
@@ -21,7 +21,7 @@ const Footer = () => {
           className={styles.linkIcon}
           href="https://github.com/JoseLuria"
           target="_blank"
-          title="Enlace a Github"
+          title="Enlace a github"
         >
           <FontAwesomeIcon className={styles.icon} icon={faGithubSquare} />
         </a>
