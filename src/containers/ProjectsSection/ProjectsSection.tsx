@@ -9,7 +9,7 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects" className={styles.projectSection}>
-      <Title size="h2">02. Mis Proyectos</Title>
+      <Title size="h2">Mis Proyectos</Title>
       <Paragraph>Estos son algunos de los proyectos que he realizado</Paragraph>
       {projects.map(
         ({ title, description, image, liveLink, githubLink }, index) => (

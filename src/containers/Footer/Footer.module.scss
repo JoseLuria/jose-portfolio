@@ -1,6 +1,8 @@
 @use "../../sass";
 
 .footerContainer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   padding: 25px 1.5rem;
   background-color: sass.$black;
@@ -12,7 +14,6 @@
   gap: 1rem;
 
   @include sass.breakpoint(sass.$size-lg) {
-    position: relative;
     padding: 35px 3rem;
     flex-direction: row;
     justify-content: center;

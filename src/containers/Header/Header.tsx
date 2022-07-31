@@ -15,7 +15,7 @@ const Header = () => {
         <Paragraph>
           Soy, un desarrollador web Frontend
           <br />
-          especializado en React
+          especializado en React y Next JS
         </Paragraph>
         <div className={styles.headerButtons}>
           <LinkButton
