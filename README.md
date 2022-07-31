@@ -1,18 +1,18 @@
-# 🤖 My personal portfolio
+# 🤖 Portafolio Personal
 
-My personal web page created with TypeScript React and Sass
+Mi portafolio personal creado con React, TypeScript y SASS
 
 [https://joseluria.com/](https://joseluria.com/)
 
 ![Screenshot](./public/preview.png)
 
-## 📄 Built with
+## 📄 Esta aplicación fue construida usando las siguientes tecnologías
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [Sass](https://sass-lang.com/)
 
-## ⚙️ License
+## ⚙️ Licencia
 
 [MIT](https://opensource.org/licenses/MIT)
