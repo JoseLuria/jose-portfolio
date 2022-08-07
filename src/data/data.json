@@ -9,10 +9,10 @@
   "projects": [
     {
       "title": "E-commerce",
-      "description": "Un E-commerce de productos de Audio creado con React, React Router, Redux Toolkit y SASS.",
+      "description": "Una tienda con productos de audio creada con NextJs usando Static site generation, Middelwares, TypeScript, Tailwind y una base de datos de MongoDB.",
       "image": "./ecommerce-preview.jpg",
-      "liveLink": "https://audiophile-ecommerce-website.netlify.app/",
-      "githubLink": "https://github.com/JoseLuria/audiophile-ecommerce"
+      "liveLink": "https://audiophile-next.herokuapp.com/",
+      "githubLink": "https://github.com/JoseLuria/audiophile-ecommerce-next"
     },
     {
       "title": "Todo App",
