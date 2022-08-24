@@ -11,7 +11,7 @@
       "title": "Audiophile Store",
       "description": "Una tienda con productos de audio creada con NextJs usando Static site generation, Middelwares, TypeScript, Tailwind y una base de datos de MongoDB.",
       "image": "./ecommerce-preview.jpg",
-      "liveLink": "https://audiophile-next.herokuapp.com/",
+      "liveLink": "https://audiophile-next.netlify.app/",
       "githubLink": "https://github.com/JoseLuria/audiophile-ecommerce-next"
     },
     {
