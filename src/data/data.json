@@ -1,5 +1,12 @@
 {
-  "technologies": ["JavaScript (ES6+)", "TypeScript", "React", "Next JS", "CSS/SASS", "Redux"],
+  "technologies": [
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "React",
+    "Next JS",
+    "CSS/SASS",
+    "Redux"
+  ],
   "links": [
     { "id": 1, "name": "Inicio", "direction": "#header" },
     { "id": 2, "name": "Sobre Mi", "direction": "#about" },
@@ -8,11 +15,11 @@
   ],
   "projects": [
     {
-      "title": "Audiophile Store",
-      "description": "Una tienda con productos de audio creada con NextJs usando Static site generation, Middelwares, TypeScript, Tailwind y una base de datos de MongoDB.",
-      "image": "./ecommerce-preview.jpg",
-      "liveLink": "https://audiophile-next.netlify.app/",
-      "githubLink": "https://github.com/JoseLuria/audiophile-ecommerce-next"
+      "title": "E-Buy Store",
+      "description": "Una tienda de productos de ropa creada con Next.js usando Static site generation, Next API, Next Middelwares, TypeScript, Tailwind y una base de datos de MongoDB, también incluye la integración de Paypal para procesar los pagos.",
+      "image": "./ebuy-preview.png",
+      "liveLink": "https://e-buy-seven.vercel.app/",
+      "githubLink": "https://github.com/JoseLuria/e-buy"
     },
     {
       "title": "Todo App",
