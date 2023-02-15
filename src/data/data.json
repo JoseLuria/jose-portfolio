@@ -5,7 +5,9 @@
     "React",
     "Next JS",
     "CSS/SASS",
-    "Redux"
+    "Redux",
+    "Node",
+    "Express"
   ],
   "links": [
     { "id": 1, "name": "Inicio", "direction": "#header" },
