@@ -13,9 +13,9 @@ const Header = () => {
           Mi nombre es José
         </Title>
         <Paragraph>
-          Soy, un desarrollador web Frontend
+          Soy, un desarrollador web FullStack
           <br />
-          especializado en React y Next JS
+          especializado en React y Node.js
         </Paragraph>
         <div className={styles.headerButtons}>
           <LinkButton
