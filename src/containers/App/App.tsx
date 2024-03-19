@@ -1,3 +1,4 @@
+import { Toaster } from "sonner";
 import Layout from "../../layout/Layout";
 import styles from "./App.module.scss";
 import Header from "../Header/Header";
@@ -7,14 +8,17 @@ import ContactSection from "../ContactSection/ContactSection";
 
 function App() {
   return (
-    <Layout>
-      <Header />
-      <main className={styles.mainContainer}>
-        <AboutSection />
-        <ProjectsSection />
-        <ContactSection />
-      </main>
-    </Layout>
+    <>
+      <Layout>
+        <Header />
+        <main className={styles.mainContainer}>
+          <AboutSection />
+          <ProjectsSection />
+          <ContactSection />
+        </main>
+      </Layout>
+      <Toaster position="top-right" richColors closeButton />
+    </>
   );
 }
 
